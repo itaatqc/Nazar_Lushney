@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="mySuite" >
+    <test name="SendOnMail" >
+        <classes>
+            <class name="SendOnMail" />
+        </classes>
+    </test>
+</suite>
