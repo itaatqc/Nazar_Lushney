@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.softserve.edu</groupId>
-  <artifactId>MyProjectWeather</artifactId>
+  <artifactId>MyProjectWeatherNew</artifactId>
   <version>1.0</version>
 
   <packaging>jar</packaging>
@@ -34,6 +34,12 @@
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
         </dependency>
+        
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4.7</version>
+		</dependency>
 		
 	</dependencies>
 	<build>
@@ -60,11 +66,6 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.18.1</version>
-				<configuration>
-					<suiteXmlFiles>
-						<suiteXmlFile>testng1.xml</suiteXmlFile>
-					</suiteXmlFiles>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
