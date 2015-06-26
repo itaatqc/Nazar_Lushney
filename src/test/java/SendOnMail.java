@@ -15,7 +15,7 @@ import com.softserve.edu.SendMail;
 public class SendOnMail {
     private WebDriver driver;
     private Helper helper;
-    private final static Logger helperLogger = Logger.getLogger(SendMail.class);
+    private final static Logger helperLogger = Logger.getLogger(SendOnMail.class);
  
 
     @BeforeMethod
@@ -30,6 +30,7 @@ public class SendOnMail {
     public void send() {
     	driver.get("http://weather.i.ua/");
     	SendMail.SendMailToInbox(helper.getFormatedWeather());
+        helperLogger.info("Done");
 
     }
 

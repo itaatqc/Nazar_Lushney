@@ -5,9 +5,6 @@ import org.openqa.selenium.WebDriver;
 
 public class Helper {
 
-//	private WebDriver driver = new driver();
-	
-//	private WebDriver driver;
 	
 	private String morningTemperature;
 	private String morningCondition;
