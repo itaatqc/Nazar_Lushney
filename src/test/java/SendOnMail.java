@@ -15,13 +15,13 @@ import com.softserve.edu.SendMail;
 public class SendOnMail {
     private WebDriver driver;
     private Helper helper;
-//    private final static Logger helperLogger = Logger.getLogger(SendMail.class);
+    private final static Logger helperLogger = Logger.getLogger(SendMail.class);
  
 
     @BeforeMethod
     public void setUp() {
         driver = new FirefoxDriver();
-//        helperLogger.info("Browser start");
+        helperLogger.info("Browser start");
         
         helper = new Helper(driver);
     }
