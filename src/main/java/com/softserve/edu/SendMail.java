@@ -15,7 +15,7 @@ import org.testng.log4testng.Logger;
 public class SendMail {
 
 	
-	private final static Logger helperLogger = Logger.getLogger(SendMail.class);
+//	private final static Logger helperLogger = Logger.getLogger(SendMail.class);
 
 	public static void SendMailToInbox(String formatedWeather) {
      		
@@ -49,8 +49,8 @@ public class SendMail {
             
             Transport.send(message);
 
-//            System.out.println("Done");
-            helperLogger.info("Done");
+            System.out.println("Done");
+//            helperLogger.info("Done");
 
         } catch (MessagingException e) {
             throw new RuntimeException(e);
